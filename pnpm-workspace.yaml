@@ -1,8 +1,9 @@
 overrides:
   esbuild@<0.28.1: 0.28.2
-  qs@<6.15.2: 6.15.2
+  qs@<6.16.0: 6.16.0
   picomatch@<4.0.4: 4.0.4
   path-to-regexp@<8.4.0: 8.4.0
+  js-yaml@<3.15.2: 3.15.2
 allowBuilds:
   bufferutil: true
   esbuild: true
