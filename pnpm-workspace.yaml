@@ -3,6 +3,7 @@ overrides:
   qs@<6.15.2: 6.15.2
   picomatch@<4.0.4: 4.0.4
   path-to-regexp@<8.4.0: 8.4.0
+  source-map-js@<1.2.2: 1.2.2
 allowBuilds:
   bufferutil: true
   esbuild: true
