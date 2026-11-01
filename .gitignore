@@ -101,4 +101,13 @@ Thumbs.db
 # Vite specific
 .vite/
 
+# Tool / editor local state
+.claude/
+.Codex/
+.history/
+.playwright-mcp/
+
+# Local design screenshots
+/*.png
+
 .planning/debug/
