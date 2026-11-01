@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, Server, Users, Cloud, Wrench, Loader2, Check } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { submitLead } from "@/lib/supabase";
+import { submitLead } from "@/lib/leads";
 
 function ManagedWaitlistForm() {
   const [email, setEmail] = useState("");
@@ -22,7 +22,7 @@ function ManagedWaitlistForm() {
     try {
       const result = await submitLead(email, "get-started-managed");
 
-      if (result.status === "ok" || result.status === "duplicate") {
+      if (result.status === "ok") {
         setStatus("success");
         setEmail("");
       } else {

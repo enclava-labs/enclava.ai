@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, Loader2, Check } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { submitLead } from "@/lib/supabase";
+import { submitLead } from "@/lib/leads";
 
 interface WaitlistFormProps {
   className?: string;
@@ -26,7 +26,7 @@ export default function WaitlistForm({ className, source = "hero" }: WaitlistFor
     try {
       const result = await submitLead(email, source);
 
-      if (result.status === "ok" || result.status === "duplicate") {
+      if (result.status === "ok") {
         setStatus("success");
         setEmail("");
       } else {
