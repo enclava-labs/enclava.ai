@@ -112,5 +112,11 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "body-parser": "2.4.0",
+      "qs": "6.16.1"
+    }
   }
 }
